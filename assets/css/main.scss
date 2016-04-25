@@ -116,6 +116,7 @@ ul {
 }
 
 
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -140,19 +141,21 @@ ul {
 }
 
 
-.footer {
-}
-
 .fancypantsheader {
+	width: 100%;
+	margin: 0px auto;
     padding-bottom: 15px;
     h1 {
+		display: block;
+		margin: 5% auto 0;
 		font-size: 6em;
 		font-weight: 500;
         color: $color-highlight1;
-        margin-bottom: 0;
 		padding-bottom: 20px;
+
     }
     h2 {
+		display: block;
         font-size: 1.5em;
 		font-weight: 400;
         margin-bottom: 25px;
