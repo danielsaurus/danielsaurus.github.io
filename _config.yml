@@ -1,0 +1,38 @@
+# My variables
+name:             Daniel Bigler
+title:            Daniel Bigler
+description:      Writer. Educator. Professional Big Kid.
+canonical:        http://danielsaurus.github.io
+
+google_analytics: 
+google_verification: null
+
+# Stuff
+owner:
+  name:           Daniel Bigler
+  avatar:         avatar.png
+  bio:            "Professional Big Kid. Dinosaur expert."
+  email:          hello@danielbigler.com
+  twitter:        thisisdaniel
+  github:         danielsaurus
+  instagram:      danielsaurus
+  dribbble:       danielsaurus
+  location:       "Jurassic Park"
+
+# File management
+include: [".htaccess"]
+exclude: ["README.md", "LICENSE"]
+
+
+# Sass
+sass:
+  style: :compressed
+  sass_dir: _sass
+
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge

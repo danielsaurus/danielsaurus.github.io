@@ -1,0 +1,285 @@
+---
+---
+
+@import "reset";
+@import "config";
+
+html {
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+  position: relative;
+  border-top: 0.4rem solid #75FFDE;
+  border-bottom: 0.4rem solid #67B1FF;
+  min-height: 100%; }
+  
+  html:before, html:after {
+    content: "";
+    position: absolute; }
+  
+  html:before {
+    top: -0.4rem;
+    left: -0.4rem;
+    bottom: -0.4rem;
+    right: -0.4rem;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#75FFDE), to(#67B1FF));
+    background-image: -webkit-linear-gradient(#75FFDE, #67B1FF);
+    background-image: -moz-linear-gradient(#75FFDE, #67B1FF);
+    background-image: -o-linear-gradient(#75FFDE, #67B1FF);
+    z-index: -2; }
+  
+  html:after {
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #fff; }
+  
+  @media screen and (min-width: 650px) {
+    html {
+      margin-left: 0.6rem;
+      margin-right: 0.6rem;
+      position: relative;
+      border-top: 0.6rem solid #75FFDE;
+      border-bottom: 0.6rem solid #67B1FF; }
+      html:before, html:after {
+        content: "";
+        position: absolute; }
+      html:before {
+        top: -0.6rem;
+        left: -0.6rem;
+        bottom: -0.6rem;
+        right: -0.6rem;
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#75FFDE), to(#67B1FF));
+        background-image: -webkit-linear-gradient(#75FFDE, #67B1FF);
+        background-image: -moz-linear-gradient(#75FFDE, #67B1FF);
+        background-image: -o-linear-gradient(#75FFDE, #67B1FF);
+        z-index: -2; }
+      html:after {
+        z-index: -1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #fff; } }
+
+
+body {
+    color: $color-primary;
+    background: $color-background;
+    font-family: 'Avenir LT W01 45 Book', 'Avenir Next', 'Lato';
+    font-size: 100%;
+    font-weight: 400;
+}
+h1 {
+    margin-bottom: 5px;
+}
+p {
+    font-size: 1em;
+    line-height: 150%;
+}
+a {
+  color: $color-link;
+  text-decoration: none;
+  &:visited {
+    color: $color-link-visited;
+    text-decoration: none;
+  }
+  &:hover {
+    color: $color-link-hover;
+    text-decoration: none;
+  }
+  &:active {
+    color: $color-link;
+    text-decoration: none;
+  }
+}
+ul {
+    list-style: none;
+    li {
+        padding: 5px;
+        padding-left: 10px;
+        @media screen and (max-width: $br) {
+            padding: 10px 0 10px 0;
+        }
+    }
+}
+
+
+.wrapper {
+    max-width: 600px;
+    margin: auto;
+    padding: 60px 30px 60px 30px;
+    @media screen and (max-width: $br) {
+        padding: 20px;
+    }
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 50px;
+    @media screen and (max-width: $br) {
+        display: block;
+    }
+    h1 {
+        font-size: 2em;
+        color: $color-highlight1;
+        margin-bottom: 0;
+    }
+    ul {
+        margin-top: 10px;
+        li {
+            display: inline;
+            padding: 0;
+            padding-left: 5px;
+        }
+    }
+}
+
+
+.footer {
+}
+
+.fancypantsheader {
+    padding-bottom: 15px;
+    h1 {
+		font-size: 6em;
+		font-weight: 500;
+        color: $color-highlight1;
+        margin-bottom: 0;
+		padding-bottom: 20px;
+    }
+    h2 {
+        font-size: 1.5em;
+		font-weight: 400;
+        margin-bottom: 25px;
+    }
+}
+	
+.fancypantsbody {
+    h2 {
+        font-size: 1.5em;
+		font-weight: 400;
+        margin-bottom: 25px;
+    }
+}
+
+
+.front-about {
+/*    padding-bottom: 30px; */
+    h1 {
+        font-size: 1.4em;
+        margin-bottom: 15px;
+    }
+}
+
+.front-portfolio {
+    padding-bottom: 30px;
+    h1 {
+        font-size: 1.4em;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+.front-blog {
+    padding-bottom: 30px;
+    h1 {
+        font-size: 1.4em;
+        margin-bottom: 5px;
+    }
+}
+
+
+.post {
+    padding-bottom: 30px;
+    &__title {
+        font-size: 1.6em;
+        font-weight: 700;
+        text-decoration: underline;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    &__date {
+        font-size: 1em;
+        font-style: italic;
+    }
+    &__content {
+        padding-top: 40px;
+        h1 {
+            font-size: 1.2em;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: 1em;
+            line-height: 150%;
+            margin-bottom: 15px;
+        }
+        a {
+            text-decoration: underline;
+            &:hover {
+                font-weight: bold;
+            }
+        }
+        strong {
+            font-weight: 700;
+        }
+        em {
+            font-style: italic;
+        }
+        ul {
+            font-size: 1em;
+            list-style: circle;
+            margin-left: 30px;
+            margin-top: -5px;
+            margin-bottom: 5px;
+            li {
+                padding: 5px;
+                padding-left: 5px;
+                @media screen and (max-width: $br) {
+                    padding: 10px 0 10px 0;
+                }
+            }
+            @media screen and (max-width: $br) {
+                margin-left: 10px;
+            }
+        }
+        img {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            @media screen and (max-width: $br) {
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+.about {
+    &__title {
+        font-size: 1.6em;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    &__content {
+        margin-top: 20px;
+        h1 {
+            font-size: 1.2em;
+            font-style: italic;
+            margin-top: 30px;
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: 1em;
+            line-height: 150%;
+            margin-bottom: 10px;
+        }
+    }
+}

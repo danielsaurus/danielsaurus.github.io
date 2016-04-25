@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<div class="front-about">
+	<h1>Daniel Bigler is a writer, educator, and professional big kid.</h1>
+		
+	<p>For five years, I taught in the Children's Studies program at Eastern Washington University, an interdisciplinary academic field which treats children and their experiences holistically and strives to incorporate their rights and perspectives into the research about their lives. I'm also involved in the worlds of Playwork and adventure playgrounds, DIY/Maker culture with kids, and Reggio Emilia-inspired early childhood education. To date, I've accidentally been called "Mom" by kids of all ages more times than I can count (a compliment I consider of the highest order).
+
+Currently, I'm taking a break from the academic world as I work on several writing projects and screenplays. I'm always open to new opportunities, though, so if you have something in mind,</p>
+</div>
+
+<!-- 	
+<div class="front-portfolio">
+    <h1>Web Design:</h1>
+    <ul>
+        {% for websites in site.data.websites %}
+        <li>
+            <a href="{{ websites.url }}">{{ websites.url }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div> -->
+
+
+<div class="front-blog">
+    <h1>Blog Posts:</h1>
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% include footer.html %}
