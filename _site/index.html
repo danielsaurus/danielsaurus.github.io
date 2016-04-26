@@ -30,9 +30,12 @@
 </head>
 
 <body>
+  <div class="background">
+  </div>
 
+  <div class="wrapperwrapper">
     <div class="wrapper">
-        <div class="fancypantsheader"> 
+      <div class="fancypantsheader"> 
     <h1 id="fancypantsfittext1">Daniel Bigler</h1>
 	<h2 id="fancypantsfittext2">is a writer, educator, and professional big kid.</h2>
 </div>
@@ -44,15 +47,15 @@
 	<p>You can get a hold of him <a href="mailto:hello@danielbigler.com">by email</a>, <a href="http://www.twitter.com/thisisdaniel/">Twitter</a>, or carrier pigeon probably, if you have one of those.</p>
 </div>
     </div>
-
+  </div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="jquery.fittext.js"></script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.min.js"></script>
 	<script>
-	jQuery("#fancypantsheadline").fitText();
+  	$("#fancypantsfittext1").fitText(0.65);
+    $("#fancypantsfittext2").fitText(2.2);
 	</script>
-	
+
 </body>
 
 </html>
