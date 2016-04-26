@@ -8,8 +8,8 @@ html {
   margin-left: 0.4rem;
   margin-right: 0.4rem;
   position: relative;
-  border-top: 0.4rem solid #75FFDE;
-  border-bottom: 0.4rem solid #67B1FF;
+  border-top: 0.4rem solid $color-gradient1;
+  border-bottom: 0.4rem solid $color-gradient2;
   min-height: 100%; }
   
   html:before, html:after {
@@ -21,10 +21,10 @@ html {
     left: -0.4rem;
     bottom: -0.4rem;
     right: -0.4rem;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#75FFDE), to(#67B1FF));
-    background-image: -webkit-linear-gradient(#75FFDE, #67B1FF);
-    background-image: -moz-linear-gradient(#75FFDE, #67B1FF);
-    background-image: -o-linear-gradient(#75FFDE, #67B1FF);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($color-gradient1), to($color-gradient2));
+    background-image: -webkit-linear-gradient($color-gradient1, $color-gradient2);
+    background-image: -moz-linear-gradient($color-gradient1, $color-gradient2);
+    background-image: -o-linear-gradient($color-gradient1, $color-gradient2);
     z-index: -2; }
   
   html:after {
@@ -40,8 +40,8 @@ html {
       margin-left: 0.6rem;
       margin-right: 0.6rem;
       position: relative;
-      border-top: 0.6rem solid #75FFDE;
-      border-bottom: 0.6rem solid #67B1FF; }
+      border-top: 0.6rem solid $color-gradient1;
+      border-bottom: 0.6rem solid $color-gradient2; }
       html:before, html:after {
         content: "";
         position: absolute; }
@@ -50,10 +50,10 @@ html {
         left: -0.6rem;
         bottom: -0.6rem;
         right: -0.6rem;
-        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#75FFDE), to(#67B1FF));
-        background-image: -webkit-linear-gradient(#75FFDE, #67B1FF);
-        background-image: -moz-linear-gradient(#75FFDE, #67B1FF);
-        background-image: -o-linear-gradient(#75FFDE, #67B1FF);
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from($color-gradient1), to($color-gradient2));
+        background-image: -webkit-linear-gradient($color-gradient1, $color-gradient2);
+        background-image: -moz-linear-gradient($color-gradient1, $color-gradient2);
+        background-image: -o-linear-gradient($color-gradient1, $color-gradient2);
         z-index: -2; }
       html:after {
         z-index: -1;
