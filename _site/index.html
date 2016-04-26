@@ -30,22 +30,22 @@
 </head>
 
 <body>
-  <div class="background">
-  </div>
 
+  <div class="background"></div>
   <div class="wrapperwrapper">
     <div class="wrapper">
-      <div class="fancypantsheader"> 
-    <h1 id="fancypantsfittext1">Daniel Bigler</h1>
+      <div class="fancypantsheader">
+  <h1 id="fancypantsfittext1">Daniel Bigler</h1>
 	<h2 id="fancypantsfittext2">is a writer, educator, and professional big kid.</h2>
 </div>
-	
-<div class="fancypantsbody"> 		
-	<p>For the past five years, Daniel has been a Lecturer in the <a href="http://www.ewu.edu/children">Children's Studies program</a> at Eastern Washington University, an interdisciplinary academic field which treats children and their experiences holistically and strives to incorporate their rights and perspectives into the research about their lives. He has taught courses on the <em>Sociology of Children</em>, the <em>Geography of Childhood</em>, <em>Children's Play</em>, and <em>Children & Childhood in Cinema</em>, and is known among his students for having one of the most fun, toy-filled offices around.</p>	
+
+<div class="fancypantsbody">
+	<p>For the past five years, Daniel has been a Lecturer in the <a href="http://www.ewu.edu/children">Children's Studies program</a> at Eastern Washington University, an interdisciplinary academic field which treats children and their experiences holistically and strives to incorporate their rights and perspectives into the research about their lives. He has taught courses on the <em>Sociology of Children</em>, the <em>Geography of Childhood</em>, <em>Children's Play</em>, and <em>Children & Childhood in Cinema</em>, and is known among his students for having one of the most fun, toy-filled offices around.</p>
 	<p>Daniel is very involved in the worlds of <a href="https://playeverything.wordpress.com/play-and-playwork/">Playwork</a> and <a href="http://adventureplaygrounds.hampshire.edu">adventure playgrounds</a>, <a href="http://www.tinkeringschool.com">DIY/Maker culture with children</a>, and <a href="https://en.wikipedia.org/wiki/Reggio_Emilia_approach">Reggio Emilia-inspired early childhood education</a>. With more than 15 years of experience working and conducting research with children & youth in various capacities, Daniel has also accidentally been called "Mom" by kids more times than he can even count (a compliment he considers of the highest order).</p>
 	<p>Currently, Daniel is taking a break from the academic world to focus on writing fantastic screenplays about children & childhood for film and television. He is always open to new opportunities, though, so if you have one, don't hesitate to get in touch.</p>
 	<p>You can get a hold of him <a href="mailto:hello@danielbigler.com">by email</a>, <a href="http://www.twitter.com/thisisdaniel/">Twitter</a>, or carrier pigeon probably, if you have one of those.</p>
 </div>
+
     </div>
   </div>
 
@@ -54,6 +54,21 @@
 	<script>
   	$("#fancypantsfittext1").fitText(0.65);
     $("#fancypantsfittext2").fitText(2.2);
+    //
+    var body = document.body,
+        html = document.documentElement;
+
+    function getHeight() {
+      return Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+    }
+
+    function setHeight() {
+      $(".background").height(getHeight());
+    }
+
+    $(window).on('resize', setHeight);
+
+    setHeight();
 	</script>
 
 </body>
