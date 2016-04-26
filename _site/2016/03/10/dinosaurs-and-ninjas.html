@@ -29,8 +29,7 @@
     </script>
 </head>
 
-<body>
-
+<body>  
   <div class="background"></div>
   <div class="wrapperwrapper">
     <div class="wrapper">
@@ -79,20 +78,13 @@
   	$("#fancypantsfittext1").fitText(0.65);
     $("#fancypantsfittext2").fitText(2.2);
     //
-    var body = document.body,
-        html = document.documentElement;
-
-    function getHeight() {
-      return Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
-    }
-
-    function setHeight() {
-      $(".background").height(getHeight());
-    }
-
+    var body = document.body, html = document.documentElement;
+    function getHeight() { return Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight) }
+    function setHeight() { $(".background").height(getHeight()) }
     $(window).on('resize', setHeight);
-
     setHeight();
+    //
+
 	</script>
 
 </body>
