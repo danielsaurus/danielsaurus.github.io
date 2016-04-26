@@ -1,21 +1,16 @@
 ---
 ---
 
-// background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#75FFDE), to(#67B1FF));
-// background-image: -webkit-linear-gradient(#75FFDE, #67B1FF);
-// background-image: -moz-linear-gradient(#75FFDE, #67B1FF);
-// background-image: -o-linear-gradient(#75FFDE, #67B1FF);
-
 @import "reset";
 @import "config";
 
 html, body { height: 100%; width: 100%; }
 
 .background {
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#75FFDE), to(#67B1FF));
-  background-image: -webkit-linear-gradient(#75FFDE, #67B1FF);
-  background-image: -moz-linear-gradient(#75FFDE, #67B1FF);
-  background-image: -o-linear-gradient(#75FFDE, #67B1FF);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($color-gradient1), to($color-gradient2));
+  background-image: -webkit-linear-gradient($color-gradient1, $color-gradient2);
+  background-image: -moz-linear-gradient($color-gradient1, $color-gradient2);
+  background-image: -o-linear-gradient($color-gradient1, $color-gradient2);
   width: 100%;
   height: 100%;
   position: fixed;
@@ -80,7 +75,8 @@ ul {
 
 
 .wrapper {
-    max-width: 600px;
+    max-width: 650px;
+	margin: auto;
     padding: 0 40px;
 }
 
